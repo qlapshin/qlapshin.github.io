@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Pollen"
+card_description: "Logo design and animation for an eco-friendly shopping extension"
+date:   2026-08-03 9:01:00 +0300
+categories: portfolio
+cover: pollen-cover.jpg
+image_alt: Pollen
+---
+<video autoplay loop muted playsinline style="width: 100%; height: auto;">
+  <source src="/assets/images/posts/pollen/pollen-animation-1.mp4" type="video/mp4">
+</video>
+
+Pollen is a browser extension that recommends eco-friendly products while you shop online. I made logos and logo animations for them.
+
+There are two logo versions here: the first that is round is the main one and the second is more applied.
+
+![1](/assets/images/posts/pollen/pollen-1.png)
+
+![2](/assets/images/posts/pollen/pollen-2.jpg)
+
+![3](/assets/images/posts/pollen/pollen-3.jpg)
+
+<video autoplay loop muted playsinline style="width: 100%; height: auto;">
+  <source src="/assets/images/posts/pollen/pollen-animation-2.mp4" type="video/mp4">
+</video>
+
+<div style="text-align: center">
+  Write me if you want to order a design:<br>
+  <a href="mailto:qlapshin@gmail.com">qlapshin@gmail.com</a>
+</div>

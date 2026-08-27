@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Greencup"
+card_description: "A welcoming green identity for a vegetarian coffee brand"
+date:   2026-08-03 9:08:00 +0300
+categories: portfolio
+cover: greencup-cover.jpg
+image_alt: Greencup
+---
+![1](/assets/images/posts/greencup/greencup-1.jpg)
+
+Greencup sells vegetarian coffee. The task was to create a “green” logo, which have a vegetarian focus, but will not alienate other people. I have created the logo and several other mediums, such as a business card, a menu and a coffee packaging.
+
+The logo includes 3 essential images: a leaf — shows the natural origin, coffee, and a house — shows the cosiness of this place.
+
+![2](/assets/images/posts/greencup/greencup-2.jpg)
+
+![3](/assets/images/posts/greencup/greencup-3.jpg)
+
+![4](/assets/images/posts/greencup/greencup-4.jpg)
+
+![5](/assets/images/posts/greencup/greencup-5.jpg)
+
+![6](/assets/images/posts/greencup/greencup-6.jpg)
+
+![7](/assets/images/posts/greencup/greencup-7.jpg)
+
+<div style="text-align: center">
+  Write me if you want to order a design:<br>
+  <a href="mailto:qlapshin@gmail.com">qlapshin@gmail.com</a>
+</div>

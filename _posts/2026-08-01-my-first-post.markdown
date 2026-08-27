@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-card_description: "An introduction to writing posts and working with a Jekyll-powered site."
-date:   2026-08-01 07:38:42 +0300
-categories: jekyll update
+title:  "My first Post"
+card_description: "A starter guide to creating, editing, and publishing posts with Jekyll."
+date:   2026-08-01 09:02:00 +0300
+categories: post
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home shop">
+  <ul class="post-list portfolio-grid shop-grid">
+    {%- for product in site.data.shop -%}
+      <li class="shop-card">
+        <div class="post-cover-link shop-cover-preview"{% if product.preview_folder and product.preview_count %} data-preview-folder="{{ product.preview_folder | relative_url }}" data-preview-count="{{ product.preview_count }}" data-preview-extension="{{ product.preview_extension | default: 'jpg' }}"{% endif %}>
+          <img class="post-list-cover" src="{{ product.image | relative_url }}" alt="{{ product.image_alt | default: product.title | escape }}" draggable="false">
+        </div>
+        <div class="shop-card-content">
+          <div class="shop-card-copy">
+            <h3>{{ product.title | escape }}</h3>
+            {%- if product.description and product.description != empty -%}
+              <p class="shop-description">{{ product.description | escape }}</p>
+            {%- endif -%}
+            <a class="shop-buy-button" href="{{ product.gumroad_url }}" target="_blank" rel="noopener noreferrer">Buy on Gumroad</a>
+          </div>
+          <p class="shop-price">{{ product.price | escape }}</p>
+        </div>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+<script src="{{ "/assets/shop-preview.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

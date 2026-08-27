@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "A. S. Photo"
+card_description: "A hand-lettered identity for photographer"
+date:   2026-08-03 9:05:00 +0300
+categories: portfolio
+cover: as-photo-cover.png
+image_alt: A. S. Photo
+---
+Alexander Samoilov is a photographer from Moscow.
+
+I have created a hand-lettered logo.
+
+![1](/assets/images/posts/as-photo/as-photo-1.png)
+
+The logo looks good on photos.
+
+![2](/assets/images/posts/as-photo/as-photo-2.png)
+
+And other mediums.
+
+![3](/assets/images/posts/as-photo/as-photo-3.png)
+
+It also looks great with different substrates.
+
+![4](/assets/images/posts/as-photo/as-photo-4.png)
+
+<div style="text-align: center">
+  Write me if you want to order a design:<br>
+  <a href="mailto:qlapshin@gmail.com">qlapshin@gmail.com</a>
+</div>

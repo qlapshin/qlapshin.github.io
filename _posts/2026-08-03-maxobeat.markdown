@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Maxobeat"
+card_description: "A hand-lettered logo and custom display typeface for a beatmaker"
+date:   2026-08-03 9:12:00 +0300
+categories: portfolio
+cover: maxobeat-cover.jpg
+image_alt: Maxobeat
+---
+<video autoplay loop muted playsinline style="width: 100%; height: auto;">
+  <source src="/assets/images/posts/maxobeat/maxobeat-animation.mp4" type="video/mp4">
+</video>
+
+Maxobeat is a beatmaker from Moscow.
+
+I made a hand-lettered logo and a job font to type album names, poster titles and banners.
+
+<figure>
+  <img src="/assets/images/posts/maxobeat/maxobeat-1.png" alt="Bright and juicy logo">
+  <figcaption>Bright and juicy logo</figcaption>
+</figure>
+
+![2](/assets/images/posts/maxobeat/maxobeat-2.png)
+
+<figure>
+  <img src="/assets/images/posts/maxobeat/maxobeat-3.png" alt="Album covers">
+  <figcaption>Album covers</figcaption>
+</figure>
+
+![4](/assets/images/posts/maxobeat/maxobeat-4.png)
+
+![5](/assets/images/posts/maxobeat/maxobeat-5.jpg)
+
+<div style="text-align: center">
+  Write me if you want to order a design:<br>
+  <a href="mailto:qlapshin@gmail.com">qlapshin@gmail.com</a>
+</div>

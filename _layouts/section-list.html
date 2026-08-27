@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<div class="home">
+  <ul class="post-list{% if page.category == 'portfolio' %} portfolio-grid portfolio-grid-pending{% endif %}">
+    {%- for post in site.posts -%}
+      {%- if page.category and post.categories contains page.category -%}
+        <li{% if post.card_format == 'tall' %} class="post-card-tall"{% elsif post.card_format == 'large' %} class="post-card-large"{% endif %}>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {%- assign post_cover = post.cover | default: post.image -%}
+          {%- if post.cover -%}
+            {%- assign post_cover = "/assets/images/covers/" | append: post.cover -%}
+          {%- endif -%}
+          {%- if post.card_format == 'tall' and post.tall_cover and post.tall_cover != empty -%}
+            {%- assign tall_cover_path = post.tall_cover -%}
+            {%- unless tall_cover_path contains '/' -%}
+              {%- assign tall_cover_path = "/assets/images/covers/" | append: tall_cover_path -%}
+            {%- endunless -%}
+            {%- assign tall_cover_first_char = tall_cover_path | slice: 0 -%}
+            {%- unless tall_cover_first_char == '/' -%}
+              {%- assign tall_cover_path = '/' | append: tall_cover_path -%}
+            {%- endunless -%}
+            {%- assign tall_cover_file = site.static_files | where: "path", tall_cover_path | first -%}
+            {%- if tall_cover_file -%}
+              {%- assign post_cover = tall_cover_path -%}
+            {%- endif -%}
+          {%- endif -%}
+          {%- if post_cover -%}
+            <a class="post-cover-link" href="{{ post.url | relative_url }}"><img class="post-list-cover" src="{{ post_cover | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}"></a>
+          {%- endif -%}
+          <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+          {%- if post.card_description and post.card_description != empty -%}
+            <p class="post-card-description">{{ post.card_description | escape }}</p>
+          {%- endif -%}
+          {%- if site.show_excerpts -%}{{ post.excerpt }}{%- endif -%}
+        </li>
+      {%- elsif page.exclude_category and post.categories contains page.exclude_category -%}
+      {%- elsif page.exclude_category -%}
+        <li{% if post.card_format == 'tall' %} class="post-card-tall"{% elsif post.card_format == 'large' %} class="post-card-large"{% endif %}>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {%- assign post_cover = post.cover | default: post.image -%}
+          {%- if post.cover -%}
+            {%- assign post_cover = "/assets/images/covers/" | append: post.cover -%}
+          {%- endif -%}
+          {%- if post.card_format == 'tall' and post.tall_cover and post.tall_cover != empty -%}
+            {%- assign tall_cover_path = post.tall_cover -%}
+            {%- unless tall_cover_path contains '/' -%}
+              {%- assign tall_cover_path = "/assets/images/covers/" | append: tall_cover_path -%}
+            {%- endunless -%}
+            {%- assign tall_cover_first_char = tall_cover_path | slice: 0 -%}
+            {%- unless tall_cover_first_char == '/' -%}
+              {%- assign tall_cover_path = '/' | append: tall_cover_path -%}
+            {%- endunless -%}
+            {%- assign tall_cover_file = site.static_files | where: "path", tall_cover_path | first -%}
+            {%- if tall_cover_file -%}
+              {%- assign post_cover = tall_cover_path -%}
+            {%- endif -%}
+          {%- endif -%}
+          {%- if post_cover -%}
+            <a class="post-cover-link" href="{{ post.url | relative_url }}"><img class="post-list-cover" src="{{ post_cover | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}"></a>
+          {%- endif -%}
+          <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+          {%- if post.card_description and post.card_description != empty -%}
+            <p class="post-card-description">{{ post.card_description | escape }}</p>
+          {%- endif -%}
+          {%- if site.show_excerpts -%}{{ post.excerpt }}{%- endif -%}
+        </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</div>
+
+{%- if page.category == 'portfolio' -%}
+  <noscript><style>.portfolio-grid-pending > li { opacity: 1; }</style></noscript>
+  <script src="{{ "/assets/portfolio-grid.js" | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+{%- endif -%}
