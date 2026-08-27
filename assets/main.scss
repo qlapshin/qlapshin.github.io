@@ -42,7 +42,7 @@ body {
   }
 
   html .site-nav .page-link.is-active::before {
-    background: rgb(232 232 232 / 50%);
+    background: rgba(232, 232, 232, 0.5);
   }
 
   html .site-nav .page-link:hover,
